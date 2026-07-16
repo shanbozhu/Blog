@@ -221,7 +221,7 @@ ___
 
 ### 2.10 图片
 - 加载本地图片
-![这是本地图片](./0_image/Markdown入门教程_local_image.jpg "可选的图片标题")
+![这是本地图片](./local_image.jpg "可选的图片标题")
 - 使用 Markdown 语法插入图片（图片不支持跳转）
 ![pFZHwAe.jpg](https://s11.ax1x.com/2024/01/23/pFZHwAe.jpg)
 ![svg图片](https://markdown.com.cn/images/i-am-svg.svg)
