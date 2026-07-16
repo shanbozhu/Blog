@@ -1,5 +1,5 @@
 <h1 style="text-align:center; font-family:Times New Roman; color:black;">
-    基于宿主调试 iOS SDK 源码方案
+    基于宿主 ipa 调试 iOS SDK 源码方案
 </h1>
 
 ## 0. 前提
