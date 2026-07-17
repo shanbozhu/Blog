@@ -5,16 +5,16 @@ draft: false
 ---
 
 <style>
-  pre {
-    word-wrap: break-word;
-    white-space: pre-wrap !important;
-    overflow-wrap: break-word;
-  }
-  code, tt {
-    white-space: pre-wrap !important;
-    word-break: break-all;
-    overflow-wrap: break-word;
-  }
+    pre {
+        word-wrap: break-word;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word;
+    }
+    code, tt {
+        white-space: pre-wrap !important;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
 </style>
 
 [TOC]

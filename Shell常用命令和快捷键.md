@@ -4,6 +4,19 @@ date: 2019-12-13T16:20:07+08:00
 draft: false
 ---
 
+<style>
+    pre {
+        word-wrap: break-word;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word;
+    }
+    code, tt {
+        white-space: pre-wrap !important;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+</style>
+
 [TOC]
 
 ## 一、shell常用命令

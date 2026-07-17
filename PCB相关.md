@@ -4,6 +4,19 @@ date: 2019-05-20T10:48:21+08:00
 draft: true
 ---
 
+<style>
+    pre {
+        word-wrap: break-word;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word;
+    }
+    code, tt {
+        white-space: pre-wrap !important;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+</style>
+
 [TOC]
 
 ## Protel99SE 中怎样添加库文件

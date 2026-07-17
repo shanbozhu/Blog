@@ -1,3 +1,16 @@
+<style>
+    pre {
+        word-wrap: break-word;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word;
+    }
+    code, tt {
+        white-space: pre-wrap !important;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+</style>
+
 ## 如何通过 cocoapods 发布源码？
 
 通过 CocoaPods 发布源码主要分为发布到**公有仓库（Trunk）** 和发布到**私有仓库（Private Repo）** 两种场景。以下是完整的发布流程指南：

@@ -2,6 +2,19 @@
     基于宿主 ipa 调试 iOS SDK 源码方案
 </h1>
 
+<style>
+    pre {
+        word-wrap: break-word;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word;
+    }
+    code, tt {
+        white-space: pre-wrap !important;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+</style>
+
 ## 0. 前提
 
 ### 宿主方：ipa 构建设置，确保开启了调试符号
