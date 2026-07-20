@@ -19,7 +19,7 @@
 
 ### 宿主方：ipa 构建设置，确保开启了调试符号
 
-release 一般是默认开启的，debug 需要手动开启
+release 默认开启的，debug 需要手动开启
 ```
 DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
 GCC_GENERATE_DEBUGGING_SYMBOLS = YES
