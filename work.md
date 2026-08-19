@@ -67,23 +67,6 @@ bundle exec fastlane ios PublishSingleSDK \
 bundle exec fastlane ios build build_only:true
 ```
 
-## SDK 前缀替换脚本 - 更新为「旺脉」前缀
-
-```
-python3 scripts/replace_component_prefixes.py \
-  --prefix MentaVlionSDK=WMV \
-  --product-name MentaVlionSDK=WM_Vlion_AdSDK \
-  --prefix MentaVlionBaseSDK=WMB \
-  --product-name MentaVlionBaseSDK=WM_VlionBase_AdSDK \
-  --prefix MentaUnifiedSDK=WMU \
-  --product-name MentaUnifiedSDK=WM_VlionUnified_AdSDK \
-  --prefix MentaVlionAdapter=WMA \
-  --product-name MentaVlionAdapter=WM_VlionAdapter_AdSDK \
-  --bundle-name WMVBaseResources \
-  --bundle-resource-prefix wm_vlion_ \
-  --apply
-```
-
 ## SDK 前缀替换脚本 - 更新为「莱特」前缀
 
 ```
