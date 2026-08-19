@@ -67,6 +67,13 @@ bundle exec fastlane ios PublishSingleSDK \
 bundle exec fastlane ios build build_only:true
 ```
 
+## IPA 打包、上传蒲公英
+
+```
+bundle exec fastlane ios build \
+pgyer_update_description:"修复登录问题，优化启动速度"
+```
+
 ## SDK 前缀替换脚本 - 更新为「莱特」前缀
 
 ```
