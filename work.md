@@ -61,13 +61,18 @@ bundle exec fastlane ios PublishSingleSDK \
   build_only:true
 ```
 
-## IPA 仅打包、不上传蒲公英
+## IPA 仅打包、不上传蒲公英、不发送钉钉群通知
 
 ```
 bundle exec fastlane ios build build_only:true
 ```
 
-## IPA 打包、上传蒲公英
+## IPA 打包、上传蒲公英、发送钉钉群通知
+
+```
+bundle exec fastlane ios build \
+pgyer_update_description:"<br> 1. 版本号：7.01.00 <br> 2. 修复地理位置经纬度 lat、lon、long 字段的数据类型错误问题，需要传入 NSNumber 类型 <br> 3. 复用主线已知的问题修复"
+```
 
 ```
 bundle exec fastlane ios build \
