@@ -25,7 +25,7 @@ git merge develop/7.00.31 --no-ff --no-commit -m "【功能】提供无他相机
 pod trunk delete MentaVlionSDK 7.00.33
 ```
 
-## SDK 仅打包、不上传 GitHub（podspec）和 Aliyun（framework）
+## SDK 仅打包、不上传 GitHub（podspec）、不上传 Aliyun（framework）
 
 ```
 bundle exec fastlane ios PublishSingleSDK \
