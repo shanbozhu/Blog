@@ -79,6 +79,16 @@ bundle exec fastlane ios build \
 pgyer_update_description:"修复登录问题，优化启动速度"
 ```
 
+## 静态 XCFramework 组件聚合
+
+```bash
+./scripts/merge_binary_components.py \
+  --aggregate MentaUnifiedSDK \
+  --component MentaVlionAdapter \
+  --component MentaVlionSDK \
+  --component MentaVlionBaseSDK
+```
+
 ## SDK 前缀替换脚本 - 更新为「莱特」前缀
 
 ```
