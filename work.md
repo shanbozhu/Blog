@@ -42,13 +42,13 @@ bundle exec fastlane ios PublishMultipleSDKs build_only:true
 
 ```
 bundle exec fastlane ios PublishMultipleSDKs \
-  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter" \
+  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter,MentaLTMBAdapter,MentaWangMaiAdapter" \
   build_only:true
 ```
 
 ```
 bundle exec fastlane ios PublishMultipleSDKs \
-  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter" \
+  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter,MentaLTMBAdapter,MentaWangMaiAdapter" \
   publish_merged_adapters:true \
   build_only:true
 ```
@@ -57,7 +57,7 @@ bundle exec fastlane ios PublishMultipleSDKs \
 bundle exec fastlane ios PublishSingleSDK \
   sdk_name:MentaVlionAdapter \
   pod_version:7.00.33 \
-  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter" \
+  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter,MentaLTMBAdapter,MentaWangMaiAdapter" \
   build_only:true
 ```
 
@@ -71,12 +71,7 @@ bundle exec fastlane ios build build_only:true
 
 ```
 bundle exec fastlane ios build \
-pgyer_update_description:"<br> 1. 版本号：7.01.00 <br> 2. 修复地理位置经纬度 lat、lon、long 字段的数据类型错误问题，需要传入 NSNumber 类型 <br> 3. 复用主线已知的问题修复"
-```
-
-```
-bundle exec fastlane ios build \
-pgyer_update_description:"修复登录问题，优化启动速度"
+  pgyer_update_description:"<br> 1. 版本号：7.01.00 <br> 2. 修复地理位置经纬度 lat、lon、long 字段的数据类型错误问题，需要传入 NSNumber 类型"
 ```
 
 ## 静态 XCFramework 组件聚合
