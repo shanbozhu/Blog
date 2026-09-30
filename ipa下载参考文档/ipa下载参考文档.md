@@ -15,9 +15,10 @@
 
 ## ipa 下载参考文档
 
-https://github.com/EEliberto/Pastel-macOS  
-https://github.com/beer-psi/ipatool.ts  
 https://github.com/majd/ipatool  
+https://github.com/EEliberto/Pastel-macOS  
+https://juejin.cn/post/7602894102993338378  
+https://github.com/beer-psi/ipatool.ts  
 https://zhuanlan.zhihu.com/p/2050135468772168505
 
 ## 安装 ipa 下载工具
@@ -28,6 +29,17 @@ https://zhuanlan.zhihu.com/p/2050135468772168505
 
 `ipatool auth login -e +8613564413699 -p Marris686-/`  
 `ipatool auth login --help`
+
+```
+# 登录 Apple ID（开启双重验证需输入验证码）
+ipatool auth login -e 你的邮箱 -p 你的密码
+# 查看登录信息
+ipatool auth info
+# 登出/撤销凭证
+ipatool auth revoke
+```
+
+注意：双重验证环境下，密码需用「App 专用密码」（Apple ID 管理页生成），避免登录失败。
 
 ![](./login.png)
 
