@@ -15,7 +15,7 @@
 
 ## ipa 下载参考文档
 
-https://github.com/JohnxAI/ipa-download  
+https://github.com/EEliberto/Pastel-macOS  
 https://github.com/beer-psi/ipatool.ts  
 https://github.com/majd/ipatool  
 https://zhuanlan.zhihu.com/p/2050135468772168505
@@ -25,6 +25,8 @@ https://zhuanlan.zhihu.com/p/2050135468772168505
 `brew install ipatool`
 
 ## 登录
+
+`ipatool auth login -e +8613564413699 -p Marris686-/`
 
 ![](./login.png)
 
