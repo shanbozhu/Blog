@@ -26,7 +26,8 @@ https://zhuanlan.zhihu.com/p/2050135468772168505
 
 ## 登录
 
-`ipatool auth login -e +8613564413699 -p Marris686-/`
+`ipatool auth login -e +8613564413699 -p Marris686-/`  
+`ipatool auth login --help`
 
 ![](./login.png)
 
