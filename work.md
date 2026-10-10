@@ -38,7 +38,7 @@ bundle exec fastlane ios PublishSingleSDK \
 bundle exec fastlane ios PublishMultipleSDKs build_only:true
 ```
 
-## Adapter 聚合
+## SDK 仅打包、Adapter 聚合
 
 ```
 bundle exec fastlane ios PublishMultipleSDKs \
