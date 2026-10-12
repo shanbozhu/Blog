@@ -48,8 +48,8 @@ pod repo push Menta #{sdk_name}.podspec --verbose --allow-warnings --skip-import
 cd ~/.cocoapods/repos/Menta
 git pull --ff-only
 
-git rm -r MentaVlionSDK/7.00.33
-git commit -m "Remove MentaVlionSDK 7.00.33"
+git rm -r MentaVlionBaseSDK/7.00.33
+git commit -m "Remove MentaVlionBaseSDK 7.00.33"
 git push
 
 # 删除本地 pod 源
