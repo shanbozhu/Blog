@@ -19,10 +19,50 @@ git merge develop/combo/450_silkworm_0629 --no-ff -m "【功能】优化小蚕�
 git merge develop/7.00.31 --no-ff --no-commit -m "【功能】提供无他相机 sdk"
 ```
 
-## 删除 pod trunk 上的版本
+## pod 发布相关命令
+
+### 公共仓库
 
 ```
-pod trunk delete MentaVlionSDK 7.00.33
+# 删除公共仓库源 trunk 上的具体 pod 组件版本
+pod trunk delete MentaVlionBaseSDK 7.00.33
+
+# 列出本地 pod 源
+pod repo list
+
+# 发布 pod 组件到公共仓库源 trunk
+pod trunk push #{sdk_name}.podspec --verbose --allow-warnings --skip-import-validation --synchronous
+```
+
+### 私有仓库
+
+```
+# 添加本地 pod 源，别名为 Menta
+pod repo add Menta https://github.com/mentasdk/menta-specs.git
+
+# 发布 pod 组件到私有仓库源 Menta
+# 找到本机名为 Menta 的 Specs 仓库，把这个 podspec 发布到它对应的远程 Git 仓库。因此你需要有该远程仓库的写入权限。
+pod repo push Menta #{sdk_name}.podspec --verbose --allow-warnings --skip-import-validation
+
+# 删除 Menta 私有仓库源上的具体 pod 组件版本
+cd ~/.cocoapods/repos/Menta
+git pull --ff-only
+
+git rm -r MentaVlionSDK/7.00.33
+git commit -m "Remove MentaVlionSDK 7.00.33"
+git push
+
+# 删除本地 pod 源
+pod repo remove Menta
+```
+
+# 发布 pod 组件到私有仓库源 Menta
+
+```
+IS_TEST=true \
+bundle exec fastlane ios PublishMultipleSDKs \
+  merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter,MentaLTMBAdapter,MentaWangMaiAdapter" \
+  build_only:true
 ```
 
 ## SDK 仅打包、不上传 GitHub（podspec）、不上传 Aliyun（framework）
