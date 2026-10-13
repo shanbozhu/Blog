@@ -56,7 +56,7 @@ git push
 pod repo remove Menta
 ```
 
-# 发布 pod 组件到私有仓库源 Menta
+## 发布 pod 组件到私有仓库源 Menta
 
 ```
 IS_TEST=true \
