@@ -59,10 +59,10 @@ pod repo remove Menta
 ## 发布 pod 组件到私有仓库源 Menta
 
 ```
-IS_TEST=true \
 bundle exec fastlane ios PublishMultipleSDKs \
   merge_adapters:"MentaFunLinkAdapter,MentaJiaTouAdapter,MentaQimingAdapter,MentaLTMBAdapter,MentaWangMaiAdapter" \
-  build_only:true
+  build_only:true \
+  use_private_repo:true
 ```
 
 ## SDK 仅打包、不上传 GitHub（podspec）、不上传 Aliyun（framework）
