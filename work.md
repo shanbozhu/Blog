@@ -68,14 +68,14 @@ bundle exec fastlane ios PublishMultipleSDKs \
 ## SDK 仅打包、不上传 GitHub（podspec）、不上传 Aliyun（framework）
 
 ```
+bundle exec fastlane ios PublishMultipleSDKs build_only:true
+```
+
+```
 bundle exec fastlane ios PublishSingleSDK \
   sdk_name:MentaVlionBaseSDK \
   pod_version:7.00.33 \
   build_only:true
-```
-
-```
-bundle exec fastlane ios PublishMultipleSDKs build_only:true
 ```
 
 ## SDK 仅打包、Adapter 聚合
