@@ -21,6 +21,12 @@ git merge develop/7.00.31 --no-ff --no-commit -m "【功能】提供无他相机
 
 ## pod 发布相关命令
 
+### 注册
+
+```
+pod trunk register zbflying@qq.com/mentasdk.vip@gmail.com
+```
+
 ### 公共仓库
 
 ```
